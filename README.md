@@ -1,4 +1,5 @@
-# bank 🏦
+
+![Bank Logo](assets/bank.png)
 
 **Bank** is a command-line utility that combines the functionality of `mkdir` and `touch`. It allows you to create directories or empty files with automatic parent creation, permission management, and interactive prompts for ambiguous paths.
 ![Bank Demo](assets/bank.gif)
