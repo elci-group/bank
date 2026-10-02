@@ -241,7 +241,10 @@ fn main() {
     }
 
     if fields.is_empty() || fields.iter().all(|f| f.len() <= 1) {
-        __curly_original_main();
+        if let Err(e) = __curly_original_main() {
+            eprintln!("{:#}", e);
+            std::process::exit(1);
+        }
         return;
     }
 
